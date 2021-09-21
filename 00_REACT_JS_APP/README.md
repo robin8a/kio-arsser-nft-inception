@@ -251,12 +251,12 @@ amplify init
 nano ~/.aws/credentials
 export PATH=~/Library/Python/3.8/bin:$PATH
 # source ~/.bash_profile
-# test
-aws s3 ls --profile kio-pork-colombia
-export AWS_PROFILE=kio-pork-colombia
+# Test
+aws s3 ls --profile kio-arsser-nft
+export AWS_PROFILE=kio-arsser-nft
 
 # aws codecommit create-repository --repository-name MyDemoRepo --repository-description "My demonstration repository" --tags Team=Saanvi
-aws codecommit create-repository --repository-name kio-sl-video-history-board-rjs-app --repository-description "Pork Colombia Video History Board" --tags Team=kio --region us-east-1 
+aws codecommit create-repository --repository-name kio-arsser-nft-rjs-app --repository-description "ARSSER NFT" --tags Team=kio --region us-east-1 
 
 ```
 
@@ -264,15 +264,15 @@ aws codecommit create-repository --repository-name kio-sl-video-history-board-rj
 ```json
 {
     "repositoryMetadata": {
-        "accountId": "449195197711",
-        "repositoryId": "78482a05-0973-4896-a814-924c32f7d38d",
-        "repositoryName": "kio-sl-video-history-board-rjs-app",
-        "repositoryDescription": "Pork Colombia Video History Board",
-        "lastModifiedDate": "2021-08-18T20:25:06.501000-05:00",
-        "creationDate": "2021-08-18T20:25:06.501000-05:00",
-        "cloneUrlHttp": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-sl-video-history-board-rjs-app",
-        "cloneUrlSsh": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-sl-video-history-board-rjs-app",
-        "Arn": "arn:aws:codecommit:us-east-1:449195197711:kio-sl-video-history-board-rjs-app"
+        "accountId": "162412794914",
+        "repositoryId": "551855c0-16b7-49e2-9b00-f42951c8ce4a",
+        "repositoryName": "kio-arsser-nft-rjs-app",
+        "repositoryDescription": "ARSSER NFT",
+        "lastModifiedDate": "2021-09-21T10:52:11.375000-05:00",
+        "creationDate": "2021-09-21T10:52:11.375000-05:00",
+        "cloneUrlHttp": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-arsser-nft-rjs-app",
+        "cloneUrlSsh": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/kio-arsser-nft-rjs-app",
+        "Arn": "arn:aws:codecommit:us-east-1:162412794914:kio-arsser-nft-rjs-app"
     }
 }
 ```
@@ -282,9 +282,9 @@ aws codecommit create-repository --repository-name kio-sl-video-history-board-rj
 
 ```sh
 ssh-keygen
-/Users/robin8a/.ssh/kio_pork_colombia_codecommit_rsa
+/Users/robin8a/.ssh/kio_arsser_nft_codecommit_rsa
 
-cat ~/.ssh/kio_pork_colombia_codecommit_rsa.pub
+cat ~/.ssh/kio_arsser_nft_codecommit_rsa.pub
 
 ```
 
@@ -297,10 +297,10 @@ nano config
 # Add
 
 # CodeCommit hosts
-Host kio_pork_colombia_codecommit_rsa
+Host kio_arsser_nft_codecommit_rsa
    HostName git-codecommit.us-east-1.amazonaws.com
-   User APKAWRFQ6YUH42AMMZXB
-   IdentityFile ~/.ssh/kio_pork_colombia_codecommit_rsa
+   User APKASLUEOSQRO3G2II4V
+   IdentityFile ~/.ssh/kio_arsser_nft_codecommit_rsa
 
 ```
 
@@ -309,7 +309,8 @@ Host kio_pork_colombia_codecommit_rsa
 ```sh
 # git remote -v
 # git remote rm origin
-git remote add origin ssh://kio_pork_colombia_codecommit_rsa/v1/repos/kio-sl-video-history-board-rjs-app
+# git init
+git remote add origin ssh://kio_arsser_nft_codecommit_rsa/v1/repos/kio-arsser-nft-rjs-app
 git push --set-upstream origin master
 git push
 ```
@@ -331,7 +332,7 @@ Amplify hosting urls:
 ┌──────────────┬──────────────────────────────────────────────┐
 │ FrontEnd Env │ Domain                                       │
 ├──────────────┼──────────────────────────────────────────────┤
-│ master       │ https://master.d2rba890rx31oh.amplifyapp.com │
+│ master       │ https://master.d1ogklivf2lz8y.amplifyapp.com │
 └──────────────┴──────────────────────────────────────────────┘
 ```
 
